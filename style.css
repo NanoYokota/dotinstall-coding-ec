@@ -11,10 +11,6 @@ h1, h2, h3 {
   font-weight: normal;
 }
 
-header {
-  padding: 32px 0;
-}
-
 a {
   text-decoration: none;
   color: black;
@@ -48,9 +44,29 @@ h3 {
   box-sizing: border-box;
 }
 
+/* header */
+
+header {
+  padding: 32px 0;
+}
+
+header h1:hover {
+  opacity: .8;
+}
+
+/* footer */
+footer {
+  margin-top: 32px;
+  text-align: center;
+}
+
+small {
+  font-size: 14px;
+}
+
 /* products */
 .products {
-  padding: 32px 0;
+  margin-top: 32px;
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
@@ -66,11 +82,31 @@ li img {
   height: auto;
 }
 
-/* footer */
-footer {
-  text-align: center;
+/* product */
+.product {
+  display: flex;
+  gap: 32px;
 }
 
-small {
-  font-size: 14px;
+.product > div {
+  width: calc((100% - 32px) / 2);
+}
+
+.product-info h2 {
+  font-size: 20px;
+}
+
+.product-info p {
+  margin-top: 16px;
+}
+
+button {
+  padding: 8px 16px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
 }
