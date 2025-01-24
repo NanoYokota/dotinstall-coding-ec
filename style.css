@@ -65,3 +65,12 @@ li img {
   width: 100%;
   height: auto;
 }
+
+/* footer */
+footer {
+  text-align: center;
+}
+
+small {
+  font-size: 14px;
+}
